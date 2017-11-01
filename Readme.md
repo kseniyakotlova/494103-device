@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ксения Котлова](https://up.htmlacademy.ru/htmlcss/19/user/494103).
-* Наставник: .
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_freeway).
 
 ---
 
