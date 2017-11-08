@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/#" width="10" height="10" alt="Логотип магазина гаджетов «Девайс»">
-        </a>
+      <a class="header-logo">
+        <img src="img/#" width="10" height="10" alt="Логотип магазина гаджетов «Девайс»">
+      </a>
+      <div class="navigation"> 
         <ul class="search-navigation">
           <li class="seach">Поиск по сайту</li>
         </ul>
@@ -18,13 +18,24 @@
           <li class="comparison">Сравнить</li>
           <li class="cart">Корзина</li>                                
         </ul>
+      </div>
+      
+      <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href=".html">Виртуальная реальность</a></li>
+          <li><a href=".html">Каталог товаров</a>
+             <ul class="drop-menu">
+               <li><a href="virtual_reality.html">Виртуальная реальность</a></li>
+               <li><a href="monopods.html">Моноподы для селфи</a></li>
+               <li><a href="cameras.html">Экшн-камеры</a></li>
+               <li><a href="fitness_bracelet.html">Фитнес-браслеты</a></li>
+               <li><a href="smart_watch.html">Умные часы</a></li>
+               <li><a href="quadrocopters.html">Квадрокоптеры</a></li>
+             </ul>
+          </li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="guarantee.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <!-- Выпадающее меню <div class="main-nav_dropmenu"></div> -->
       </nav>
     </header>
     <main class="container">
