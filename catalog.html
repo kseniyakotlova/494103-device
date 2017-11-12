@@ -60,9 +60,22 @@
                                          
       <section class="filtrs">
         <h3>Фильтр:</h3>
-        <!-- Здесь будет форма -->                   
-      </section> 
-                               
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость</legend>
+            от 0 <input type="range" id="price" name="price" min="0" max="9000" step="5000"> до 5000            
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
+                <label for="filter-black">Черный</label>
+              </li> 
+            </ul>  
+          </fieldset>
+        </form> 
+      </section>    
       <section class="sort">
         <h3>Сортировка:</h3>
         <ul class="sort-list">
