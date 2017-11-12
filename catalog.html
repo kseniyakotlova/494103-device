@@ -108,9 +108,18 @@
       </section>    
       <section class="sort">
         <h3>Сортировка:</h3>
-        <ul class="sort-list">
-        <!--  Здесь будет сортировка -->                       
-        </ul>                     
+        <fieldset>
+          <legend class="visually-hidden">Сортировка</legend>
+          <select name="sort-list">
+            <option value="price">По цене</option>
+            <option value="type">По типу</option>
+            <option value="popularity">По популярности</option>
+          </select>
+          <select name="sort-list-min-max">
+            <option value="min">Min</option>
+            <option value="max">Мах</option>
+          </select>
+        </fieldset>
       </section> 
                                
       <section class="catalog">
