@@ -181,8 +181,10 @@
         <div class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img src="img/map.jpg" width="560" height="222" alt="карта">
-          <a class="button" href="http://placehold112.it">Напишите нам</a>
+          <a class="button" href="map.html">
+            <img src="img/map.jpg" width="560" height="222" alt="карта">
+          </a>
+          <a class="button" href="write_us.html">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -211,15 +213,28 @@
       </a>                                                                           
     </footer>  
     
-    <section class="modal modal-login">
+    <section class="modal modal-write_us">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <!-- Здесь будет форма--> 
-      <span class="modal-close">Закрыть попап</span>
+      <form class="write_us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write_us-item">
+            <label for="write_us-name">Ваше имя:</label>
+            <input id="write_us-date" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p class="write_us-item">
+            <label for="write_us-e-mail">Ваш e-mail</label>
+            <input id="write_us-e-mail" type="text" name="e-mail" value="" placeholder="Для отправки ответа">
+          </p>
+          <p class="write_us-item">
+            <label for="write_us-comment">Текст письма:</label>
+            <textarea name="comment" id="write_us-comment" rows="7">В свободной форме</textarea>
+            <button class="button" type="submit">Отправить</button>
+      </form>  
+      <button class="modal-close" type="button">Закрыть</button>
     </section> 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map-big.jpg" width="960" height="559" alt="карта">
-      <span class="modal-close">Закрыть карту</span>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
