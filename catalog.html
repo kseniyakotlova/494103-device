@@ -18,10 +18,10 @@
         </ul>
         <ul class="user-navigation">
           <li class="login">
-            <a class="login-link">Валентин Петухов</a>
+            <a class="login-link" href="profile.html">Валентин Петухов</a>
           </li>
           <li class="exit">
-            <button class="exit" type="button">Выйти</button>
+            <a class="exit" href="#">Выйти</a>
           </li>
           <li class="compare">
             <a class="compare-link" href="compare.html">Сравнить</a>
@@ -36,11 +36,11 @@
         <ul class="site-navigation">
           <li><a href=".html">Каталог товаров</a>
              <ul class="drop-menu">
-               <li><a href="virtual_reality.html">Виртуальная реальность</a></li>
+               <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
                <li><a href="monopods.html">Моноподы для селфи</a></li>
                <li><a href="cameras.html">Экшн-камеры</a></li>
-               <li><a href="fitness_bracelet.html">Фитнес-браслеты</a></li>
-               <li><a href="smart_watch.html">Умные часы</a></li>
+               <li><a href="fitness-bracelet.html">Фитнес-браслеты</a></li>
+               <li><a href="smart-watch.html">Умные часы</a></li>
                <li><a href="quadrocopters.html">Квадрокоптеры</a></li>
              </ul>
           </li>
@@ -108,18 +108,15 @@
       </section>    
       <section class="sort">
         <h3>Сортировка:</h3>
-        <fieldset>
-          <legend class="visually-hidden">Сортировка</legend>
-          <select name="sort-list">
-            <option value="price">По цене</option>
-            <option value="type">По типу</option>
-            <option value="popularity">По популярности</option>
-          </select>
-          <select name="sort-list-min-max">
-            <option value="min">Min</option>
-            <option value="max">Мах</option>
-          </select>
-        </fieldset>
+        <ul class="sort-list">
+          <li class="price"><a href="#">По цене</a></li>
+          <li class="type"><a href="#">По типу</a></li>
+          <li class="popularity"><a href="#">По популярности</a></li>
+        </ul>
+        <ul class="sort-list-min-max">
+          <li class="min"><a href="#">Min</a></li>
+          <li class="max"><a href="#">Мах</a></li>
+        </ul>
       </section> 
                                
       <section class="catalog">
