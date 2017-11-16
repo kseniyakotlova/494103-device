@@ -1,19 +1,18 @@
-
- @font-face {
+@font-face {
     font-family: 'gilroyextrabold';
     src: url('gilroyextrabold-webfont.woff2') format('woff2'),
          url('gilroyextrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
- }
+}
 
- @font-face {
+@font-face {
     font-family: 'gilroylight';
     src: url('gilroylight-webfont.woff2') format('woff2'),
          url('gilroylight-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
- }
+}
 
 body {
   margin: 0;
@@ -32,11 +31,47 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  background-color: #f0c52e;
+}
+  
 .main-navigation {
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   line-height: auto;
   color: #000000;
+}
 
-  background-color: #f0c52e;
+.user-navigation {
+  font-size: 15px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.search-navigation {
+  font-size: 15px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.3);
+}
+    
+.search-navigation
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover,
+.search-navigation a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.search-navigation a:focus {
+  background-color: rgba(0, 0, 0, 1);
 }
 
