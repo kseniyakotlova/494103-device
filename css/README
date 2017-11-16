@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   
-  font-family: "PT Open Sans", Tahoma, sans-serif;
+  font-family: "Open Sans", Tahoma, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
