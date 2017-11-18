@@ -221,6 +221,216 @@ h2 {
   list-style: none;
 }
 
+.breadcrumbs {
+  font-family: "Open Sans", Tahoma, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 36px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:focus {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 16px;
+  letter-spacing: 6px;
+  line-height: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #ececec;
+}
+
+.catalog-item h3 {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  line-height: normal;
+  font-weight: 800;
+  text-transform: none;
+  color: #000000;
+}
+
+.catalog-item b {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  line-height: normal;
+  font-weight: 300;
+  color: #464646;
+  text-align: right;
+}
+
+.catalog-item:hover {
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+button {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  letter-spacing: 6px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: rgba(0, 0, 0);
+  background-color: #f7e296;
+}
+
+button:focus {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f7e296;
+}
+
+button .catalog-compare {
+  font-family: "Open Sans", Tahoma, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  vertical-align: middle;
+}
+
+button .catalog-compare:hover {
+  color: rgba(0, 0, 0);
+}
+
+button .catalog-compare:focus {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-hover,
+.pagination-menu,
+.pagination-item {
+  list-style: none;
+}
+
+.pagination-list {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination-item a {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 16px;
+  letter-spacing: 6px;
+  line-height: normal;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item a:hover {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.pagination-item a:focus {
+  color: rgba(0, 0, 0, 1)
+}
+
+.pagination-item a:active {
+  color: rgba(0, 0, 0, 1)
+}
+
+button .pagination-menu {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 16px;
+  letter-spacing: 6px;
+  line-height: normal;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+}
+
+button .pagination-menu:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+button .pagination-menu:focus {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.filtrs {
+  background-color: #eeeeee;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  line-height: normal;
+  font-weight: 800;
+  color: #000000;
+}
+
+.filter-option label {
+  font-family: "Open Sans", Tahoma, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #000000;
+
+  list-style: none;
+}
+
+.filter-input:hover {
+  opacity: 0.6;
+}
+
+.filter-input:disabled + label {
+  color: rgba(166, 166, 166);
+}
+
+.sort {
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.sort-list a {
+  font-family: "Open Sans", Tahoma, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 18px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-list a:focus {
+  color: rgba(0, 0, 0, 1);
+}
+
 .main-footer {
   color: #ffffff;
 
