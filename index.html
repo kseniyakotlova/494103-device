@@ -13,12 +13,11 @@
         <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина гаджетов «Девайс»">
       </a>
       <div class="navigation">
-        <ul class="search-navigation">
-          <li class="seach">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-          </li>
-        </ul>
+        <form class="search-navigation" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="search">Найти</button>
+        </form>
         <ul class="user-navigation">
           <li class="login">
             <a class="login-link" href="login.html">Войти</a>
@@ -166,17 +165,17 @@
         </div>
 
         <div id="delivery">
-          <h2>Доставка</h2>
+          <h2 class="info_about">Доставка</h2>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
 
          <div id="warranty">
-          <h2>Гарантии</h2>
+          <h2 class="info_about">Гарантии</h2>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </div>
 
         <div id="credit">
-          <h2>Кредит</h2>
+          <h2 class="info_about">Кредит</h2>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </div>
       </section>
@@ -253,7 +252,7 @@
             <label for="write-us-name">Ваше имя:</label>
             <input id="write-us-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
           </p>
-          <p class="write_us-item">
+          <p class="write-us-item">
             <label for="write-us-e-mail">Ваш e-mail</label>
             <input id="write-us-e-mail" type="text" name="e-mail" placeholder="Для отправки ответа">
           </p>

@@ -13,12 +13,11 @@
         <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина гаджетов «Девайс»">
       </a>
       <div class="navigation">
-        <ul class="search-navigation">
-          <li class="seach">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-          </li>
-        </ul>
+        <form class="search-navigation" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="search">Найти</button>
+        </form>
         <ul class="user-navigation">
           <li class="login">
             <a class="login-link" href="profile.html">Валентин Петухов</a>
@@ -62,7 +61,7 @@
       </ul>
 
       <section class="filtrs">
-        <h3>Фильтр:</h3>
+        <h3 class="filtrs-title">Фильтр:</h3>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
@@ -106,11 +105,11 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
+          <button type="submit" class="filter-button">Показать</button>
         </form>
       </section>
       <section class="sort">
-        <h3>Сортировка:</h3>
+        <h3 class="filtrs-title">Сортировка:</h3>
         <ul class="sort-list">
           <li class="price"><a href="#">По цене</a></li>
           <li class="type"><a href="#">По типу</a></li>
