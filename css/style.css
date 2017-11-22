@@ -219,7 +219,7 @@ a {
   background-color: #000000;
 }
 
-.info_about {
+.info-about {
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   letter-spacing: 0.01em;
@@ -236,6 +236,15 @@ a {
   font-weight: 800;
   color: #000000;
   list-style: none;
+}
+
+.about-us-h {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 47px;
+  letter-spacing: 0.01em;
+  line-height: normal;
+  font-weight: 800;
+  color: #000000;
 }
 
 .breadcrumbs {
@@ -464,8 +473,6 @@ a {
 
 .main-footer {
   color: #ffffff;
-
-  background-color: #464646;
 }
 
 .footer-user-navigation,
@@ -723,6 +730,125 @@ body {
   display: flex;
   align-items: flex-end;
 }
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 95px;
+
+  /* Временно для сетки */
+  min-height: 388px;
+}
+
+.info-navigation {
+  width: 280px;
+  padding-top: 80px;
+}
+
+.info-about-us {
+  margin-left: 120px;
+}
+
+.logotypes-fabricator {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0;
+  margin-bottom: 95px;
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 100px;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 85px;
+
+  /* Временно для сетки */
+  min-height: 576px;
+}
+
+.about-us {
+  padding-top: 59px;
+  padding-right: 120px;
+}
+
+.contacts {
+  padding-top: 59px;
+  padding-right: 120px;
+}
+
+.main-footer-wrapper {
+  background-color: #464646;
+
+  /* Временно для сетки */
+  min-height: 323px;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+  margin-bottom: 40px;
+
+  /* Временно для сетки */
+  min-height: 36px;
+}
+
+.footer-user-navigation {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.second-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 18px;
+}
+
+.footer-contact {
+  margin: 0;
+}
+
+.footer-site-navigation {
+  width: 440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.third-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 37px;
+}
+
+.footer-social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
 
 
 
