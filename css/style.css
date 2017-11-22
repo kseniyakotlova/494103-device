@@ -586,3 +586,43 @@ a {
   border: 0px;
   border-radius: 0px;
 }
+
+/* ----- Сеточные стили ----- */
+html,
+body {
+  min-width: 1160px;
+  min-height: 2790px;
+}
+
+body {
+  /* Временно для сетки */
+  background-image: url('device-index.jpg');
+  background-size: 1440px auto;
+  background-repeat: no-repeat;
+}
+
+.main-header {
+  display: flex;
+  margin-top: 22px;
+  margin-bottom: 56px;
+
+  /* Временно для сетки */
+  min-height: 207px;
+}
+
+.header-logo {
+  width: 164px;
+  height: 70px;
+}
+
+.navigation {
+ /* Временно для сетки */
+ min-height: 66px;
+ background-color: green;
+}
+
+.main-navigation {
+ /* Временно для сетки */
+ min-height: 70px;
+ background-color: red;
+}
