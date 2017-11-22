@@ -594,35 +594,145 @@ body {
   min-height: 2790px;
 }
 
-body {
-  /* Временно для сетки */
-  background-image: url('device-index.jpg');
-  background-size: 1440px auto;
-  background-repeat: no-repeat;
+.container {
+  width: 1160px;
+  margin: auto;
 }
 
 .main-header {
-  display: flex;
   margin-top: 22px;
   margin-bottom: 56px;
+  background-color: inherit;
 
   /* Временно для сетки */
   min-height: 207px;
 }
 
+.main-header .conteiner {
+  width: 1160px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #f7e296;
+}
+
 .header-logo {
   width: 164px;
+  padding-right: 876px;
+  margin: auto;
   height: 70px;
 }
 
 .navigation {
- /* Временно для сетки */
- min-height: 66px;
- background-color: green;
+  display: flex;
+  justify-content: space-between;
+  width: 1040px;
+  margin: auto;
+
+  /* Временно для сетки */
+  min-height: 66px;
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.user-navigation-right {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin-right: 0;
+  margin-top: 0;
 }
 
 .main-navigation {
+  width: 1040px;
+  margin: auto;
+  align-items: flex-start;
+
  /* Временно для сетки */
- min-height: 70px;
- background-color: red;
+  min-height: 70px;
+}
+
+.menu-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.menu-right {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-right: 0;
+}
+
+.menu-right-left {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin-left: 0;
+}
+
+.slider {
+  display: flex;
+  min-height: 486px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 108;
+}
+
+.slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-text  {
+  display: flex;
+  flex-direction: column;
+}
+
+.foto {
+  margin-left: 90px;
+  margin-right: 120px;
+}
+
+.catalog-icon-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 86px;
+
+  /* Временно для сетки */
+  min-height: 238px;
+}
+
+.catalog-icon-categories {
+  width: 160px;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
+
+
+
+
+.visually-hidden {
+  visibility: hidden;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }

@@ -9,73 +9,88 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="conteiner">
       <a class="header-logo">
         <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина гаджетов «Девайс»">
       </a>
-      <div class="navigation">
-        <form class="search-navigation" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="search">Поиск по сайту</label>
-          <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-          <button class="search">Найти</button>
-        </form>
-        <ul class="user-navigation">
-          <li class="login">
-            <a class="login-link" href="login.html">Войти</a>
-          </li>
-          <li class="compare">
-            <a class="compare-link" href="compare.html">Сравнить</a>
-          </li>
-          <li class="cart">
-            <a class="cart-link" href="cart.html">Корзина</a>
-          </li>
-        </ul>
-      </div>
+        <div class="navigation">
+          <form class="search-navigation" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+            <button class="search">Найти</button>
+          </form>
+          <ul class="user-navigation">
+            <li class="login">
+              <a class="login-link" href="login.html">Войти</a>
+            </li>
+            <div class="user-navigation-right">
+              <li class="compare">
+                <a class="compare-link" href="compare.html">Сравнить</a>
+              </li>
+              <li class="cart">
+                <a class="cart-link" href="cart.html">Корзина</a>
+              </li>
+            </div>
+          </ul>
+        </div>
 
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог товаров</a>
-             <ul class="drop-menu">
-               <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
-               <li><a href="monopods.html">Моноподы для селфи</a></li>
-               <li><a href="cameras.html">Экшн-камеры</a></li>
-               <li><a href="fitness-bracelet.html">Фитнес-браслеты</a></li>
-               <li><a href="smart-watch.html">Умные часы</a></li>
-               <li><a href="quadrocopters.html">Квадрокоптеры</a></li>
-             </ul>
-          </li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <div class="menu-left">
+              <li><a href="catalog.html">Каталог товаров</a>
+         <!--   <ul class="drop-menu">
+                  <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
+                  <li><a href="monopods.html">Моноподы для селфи</a></li>
+                  <li><a href="cameras.html">Экшн-камеры</a></li>
+                  <li><a href="fitness-bracelet.html">Фитнес-браслеты</a></li>
+                  <li><a href="smart-watch.html">Умные часы</a></li>
+                  <li><a href="quadrocopters.html">Квадрокоптеры</a></li>
+                </ul>  -->
+              </li>
+            </div>
+            <div class="menu-right">
+              <div class="menu-right-left">
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="guarantee.html">Гарантия</a></li>
+              </div>
+              <li><a href="contacts.html">Контакты</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <main class="container">
       <h1 class="visually-hidden">Магазин гаджетов «Девайс»</h1>
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <div class="slide">
-          <b>Делай селфи,как Бен Стиллер!</b>
-          <span class="number">01</span><br>
-          <img src="img/slide-1.png" width="384" height="486" alt="селфи-палка">
-          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <a class="button" href="http://placehold.it">Подробнее</a>
-          <table>
-            <tr>
-              <td class="stroke1">Длина палки</td>
-              <td class="stroke2">8,5 м</td>
-            </tr>
-            <tr>
-              <td class="stroke1">Вес палки</td>
-              <td class="stroke2">5 кг</td>
-            </tr>
-            <tr>
-              <td class="stroke1">Материал</td>
-              <td class="stroke2">Карбон</td>
-            </tr>
-          </table>
+          <div class="foto">
+            <img src="img/slide-1.png" width="384" height="486" alt="селфи-палка">
+          </div>
+          <div class="slider-text">
+            <b>Делай селфи,как Бен Стиллер!</b>
+            <span class="number">01</span><br>
+            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a class="button" href="http://placehold.it">Подробнее</a>
+            <table>
+              <tr>
+                <td class="stroke1">Длина палки</td>
+                <td class="stroke2">8,5 м</td>
+              </tr>
+              <tr>
+                <td class="stroke1">Вес палки</td>
+                <td class="stroke2">5 кг</td>
+              </tr>
+              <tr>
+                <td class="stroke1">Материал</td>
+                <td class="stroke2">Карбон</td>
+              </tr>
+            </table>
+          </div>
         </div>
 
-        <div class="slide">
+<!--    <div class="slide">
           <b>Худеем правильно!</b>
           <span class="number">02</span>
           <img src="img/slide-2.png" width="345" height="485" alt="фитнес-браслет">
@@ -105,13 +120,13 @@
               <td class="stroke2">50 м</td>
             </tr>
           </table>
-        </div>
+        </div>       -->
 
         <div class="navigation-slider">
           <button class="slider-button">Слайд1</button>
           <button class="slider-button">Слайд2</button>
           <button class="slider-button">Слайд3</button>
-       </div>
+        </div>
       </section>
 
       <section class="catalog-icon">
