@@ -1,15 +1,13 @@
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('gilroyextrabold-webfont.woff2') format('woff2'),
-         url('gilroyextrabold-webfont.woff') format('woff');
+    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gilroylight';
-    src: url('gilroylight-webfont.woff2') format('woff2'),
-         url('gilroylight-webfont.woff') format('woff');
+    src: url('../fonts/gilroylight-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -290,7 +288,7 @@ a {
   color: #000000;
 }
 
-.catalog-item b {
+.price {
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 16px;
   letter-spacing: 0.01em;
