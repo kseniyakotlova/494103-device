@@ -26,138 +26,147 @@ body {
   background-color: #ffffff;
 }
 
-html,
-body {
-  min-width: 1160px;
-  min-height: 2790px;
-}
-
 a {
   text-decoration: none;
 }
 
-.visually-hidden {
-  visibility: hidden;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  top: -9999px;
-  left: -9999px;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
-  width: 1160px;
-  margin: auto;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
 .main-header {
-  margin-top: 22px;
-  margin-bottom: 56px;
-
-  /* Временно для сетки */
-  min-height: 207px;
-}
-
-.main-header .container {
-  width: 1160px;
+  position:relative;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 0 20px;
+  padding-top: 39px;
+  padding-left: 60px;
+  padding-right: 60px;
   background-color: #f7e296;
+
+  /* Временно для сетки */
+  min-height: 299px;
 }
 
 .header-logo {
+  position: absolute;
+  left: 60px;
+  top: -19px;
   width: 164px;
-  padding-right: 876px;
-  margin-left: 60px;
   height: 70px;
-}
-
-.main-navigation {
-  width: 1040px;
-  margin: auto;
-  align-items: flex-start;
-
-  font-family: "Gilroy", Tahoma, sans-serif;
-  font-size: 18px;
-  letter-spacing: 0.2em;
-  line-height: normal;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #000000;
-
-  /* Временно для сетки */
-   min-height: 70px;
-}
-
-.menu-left {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.menu-right {
-  display: flex;
-  justify-content: space-between;
-  width: 500px;
-  margin-right: 0;
-}
-
-.menu-right-left {
-  display: flex;
-  justify-content: space-between;
-  width: 280px;
-  margin-left: 0;
-}
-
-.search-navigation,
-.site-navigation,
-.user-navigation,
-.drop-menu {
-  list-style: none;
-}
-
-.site-navigation a,
-.user-navigation a,
-.drop-menu a {
-  color: #000000;
-}
-
-.navigation button {
-  height: 49px;
-  width: 85px;
-  border: 2px solid #000000 ;
-  border-radius: 0;
-  background-color: inherit;
-}
-
-.navigation button:hover {
-  color: #ffffff;
-  background-color: #000000;
-}
-
-.navigation button:focus {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #000000;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
-  width: 1040px;
-  margin: auto;
-
-  /* Временно для сетки */
-  min-height: 66px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
-.drop-menu a {
-  letter-spacing: normal;
-  text-transform: none;
+.search-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 441px;
+  white-space: nowrap;
 }
 
-.drop-menu {
+.search-navigation input {
+  height: 49px;
+  width: 356px;
+  margin: 0;
+  padding-top: 2px;
+  padding-left: 39px;
+  padding-bottom: 11px;
+  border: 0;
   font-family: "Open Sans", Tahoma, sans-serif;
   font-size: 15px;
+  letter-spacing: 0.1em;
   line-height: 36px;
   font-weight: 300;
+  opacity: 0.3;
+  background-color: transparent;
+}
+
+.search-navigation span {
+  position: relative;
+}
+
+.search-navigation span::before {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: 3px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url('../img/search.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.search-navigation input:hover {
+  opacity: 0.6;
+  outline: none;
+}
+
+.search-navigation input:focus {
+  opacity: 1;
+  outline: none;
+  border-bottom: 2px solid #000000;
+}
+
+.search-navigation .search {
+  display: none;
+}
+
+.search-navigation:hover .search {
+  display: block;
+}
+
+.search-navigation .search {
+  height: 49px;
+  width: 85px;
+  padding: 0;
+  margin: 0;
+  border: 2px solid #000000 ;
+  border-radius: 0;
+  background-color: inherit;
+}
+
+.search-navigation .search:hover {
+  color: #ffffff;
+  background-color: #000000;
+  outline: none;
+}
+
+.search-navigation .search:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+  outline: none;
 }
 
 .user-navigation {
@@ -171,14 +180,6 @@ a {
   color: #000000;
 }
 
-.user-navigation-right {
-  display: flex;
-  justify-content: space-between;
-  width: 220px;
-  margin-right: 0;
-  margin-top: 0;
-}
-
 .site-navigation {
   display: flex;
   justify-content: space-between;
@@ -187,10 +188,189 @@ a {
   margin-top: 0;
 }
 
-.search-navigation {
+.login-link {
+  position: relative;
+  padding-left: 25px;
+}
+
+.login-link::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 0px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url('../img/user.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.compare-link {
+  position: relative;
+  padding-left: 27px;
+  margin-left: 205px;
+}
+
+.compare-link::before {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  left: 6px;
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url('../img/compare.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cart-link {
+  position: relative;
+  padding-left: 27px;
+  margin-left: 17px;
+}
+
+.cart-link::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 8px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url('../img/cart.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.compare-link:hover::before,
+.cart-link:hover::before,
+.login-link:hover::before {
+  opacity: 0.6;
+}
+
+.compare-link:hover::before,
+.cart-link:hover::before,
+.login-link:focus::before {
+  opacity: 0.3;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 38px;
+
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  line-height: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-navigation li {
+  white-space: nowrap;
+}
+
+.main-navigation .catalog-link {
+  position: relative;
+  padding-right: 30px;
+  margin-right: 290px;
+}
+
+.main-navigation .delivery-link  {
+  margin-right: 37px;
+}
+
+.main-navigation .guarantee-link {
+  margin-right: 108px;
+}
+
+.catalog-link::after {
+  content: "";
+
+  position: absolute;
+  top: 1px;
+  right: 4px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url('../img/plus.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.site-navigation .drop-menu {
+  position: absolute;
+  top: 20px;
+  left: -60px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start;
+
+  width: 1160px;
+  height: 129px;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  background: #f7e296;
+
+  font-family: "Open Sans", Tahoma, sans-serif;
   font-size: 15px;
+  letter-spacing: 0.01em;
   line-height: 36px;
-  color: rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+}
+
+.main-navigation > ul > li .drop-menu {
+  display: none;
+}
+
+.smart-watch {
+  margin-bottom: 40px;
+}
+
+.drop-menu li {
+  margin-left: 60px;
+}
+
+.drop-menu a {
+  display: flex;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.main-navigation > ul > li:hover .drop-menu {
+    display: flex;
+}
+
+.search-navigation,
+.site-navigation,
+.user-navigation,
+.drop-menu {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.drop-menu a {
+  display: block;
+  color: #000000;
 }
 
 .site-navigation a:hover,
@@ -326,14 +506,16 @@ a {
 }
 
 .info {
-  display: flex;
-  justify-content: space-between;
   padding: 0;
   margin-bottom: 95px;
   background-color: #e5e5e5;
 
   /* Временно для сетки */
   min-height: 388px;
+}
+.info-block {
+  display: flex;
+  justify-content: space-between;
 }
 
 .info-navigation {
@@ -347,6 +529,12 @@ a {
   font-weight: 800;
   text-transform: uppercase;
   color: #000000;
+
+}
+
+.info-navigation ul {
+  margin: 0;
+  list-style: none;
 }
 
 .info-about-us {
@@ -357,7 +545,7 @@ a {
   color: #000000;
 }
 
-.info-navigation a:active {
+.info-navigation .active a {
   font: inherit;
   color: #f7e184;
   background-color: #000000;
