@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    
+
     <div class="container">
       <header class="main-header">
         <a class="header-logo">
@@ -17,7 +17,7 @@
         <div class="navigation">
           <form class="search-navigation" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <span><input id="search" type="search" name="search" placeholder="Поиск по сайту"></span>
+            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
             <button class="search">Найти</button>
           </form>
           <ul class="user-navigation">
@@ -55,73 +55,80 @@
 
     <main>
       <h1 class="visually-hidden">Магазин гаджетов «Девайс»</h1>
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+      <div class="site-wrapper">
       <div class="container">
         <section class="slider">
           <h2 class="visually-hidden">Слайдер</h2>
-          <div class="slide">
-            <div class="foto">
-              <img src="img/slide-1.png" width="384" height="486" alt="селфи-палка">
-            </div>
+          <div class="slide slide-thirst" id="slide1">
+            <img src="img/slide-1.png" width="384" height="486" alt="селфи-палка">
             <div class="slider-text">
-              <b>Делай селфи,как Бен Стиллер!</b>
-              <span class="number">01</span><br>
+              <b class="slider-title">Делай селфи,<br> как Бен Стиллер!</b>
+              <span class="number">01</span>
               <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a class="button" href="http://placehold.it">Подробнее</a>
-              <table>
-                <tr>
-                  <td class="stroke1">Длина палки</td>
-                  <td class="stroke2">8,5 м</td>
-                </tr>
-                <tr>
-                  <td class="stroke1">Вес палки</td>
-                  <td class="stroke2">5 кг</td>
-                </tr>
-                <tr>
-                  <td class="stroke1">Материал</td>
-                  <td class="stroke2">Карбон</td>
-                </tr>
-              </table>
+              <div class="table">
+                <ul>
+                  <li class="stroke2">8,5 м</li>
+                  <li class="stroke1">Длина палки</li>
+                </ul>
+                <ul class="weight">
+                  <li class="stroke2">5 кг</li>
+                  <li class="stroke1">Вес палки</li>
+                </ul>
+                <ul>
+                  <li class="stroke2">Карбон</li>
+                  <li class="stroke1">Материал</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-<!--      <div class="slide">
-            <b>Худеем правильно!</b>
-            <span class="number">02</span>
+          <div class="slide slide-second" id="slide2">
             <img src="img/slide-2.png" width="345" height="485" alt="фитнес-браслет">
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a class="button" href="http://placehold.it">Подробнее</a>
-            <table>
-              <tr>
-                <td class="stroke1">Без подзарядки</td>
-                <td class="stroke2">48 часов</td>
-              </tr>
-            </table>
+            <div class="slider-text">
+              <b class="slider-title">Худеем<br> правильно!</b>
+              <span class="number">02</span>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="button" href="http://placehold.it">Подробнее</a>
+              <div class="table">
+                <ul>
+                  <li class="stroke2">48 часов</li>
+                  <li class="stroke1">Без подзарядки</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="slide">
-            <b>Порхает как бабочка, жалит как пчела!</b>
-            <span class="number">03</span>
+          <div class="slide slide-third" id="slide3">
             <img src="img/slide-3.png" width="526" height="334" alt="квадрокоптер">
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="button" href="http://placehold.it">Подробнее</a>
-            <table>
-              <tr>
-                <td class="stroke1">Дальность полета</td>
-                <td class="stroke2">800 м</td>
-              </tr>
-              <tr>
-                <td class="stroke1">Радиус поражения</td>
-                <td class="stroke2">50 м</td>
-              </tr>
-            </table>
-          </div>       -->
+            <div class="slider-text">
+              <b class="slider-title">Порхает как бабочка, жалит как пчела!</b>
+              <span class="number">03</span>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="button" href="http://placehold.it">Подробнее</a>
+              <div class="table">
+                <ul>
+                  <li class="stroke2">800 м</li>
+                  <li class="stroke1">Дальность полета</li>
+                </ul>
+                <ul>
+                  <li class="stroke2">50 м</li>
+                  <li class="stroke1">Радиус поражения</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
           <div class="navigation-slider">
-            <button class="slider-button">Слайд1</button>
-            <button class="slider-button">Слайд2</button>
-            <button class="slider-button">Слайд3</button>
+            <label for="product-1">Слайд1</label>
+            <label for="product-2">Слайд2</label>
+            <label for="product-3">Слайд3</label>
           </div>
         </section>
+      </div>
       </div>
 
       <div class="container">
@@ -131,12 +138,12 @@
             <li class="catalog-icon-categories">
               <a href="virtual-reality.html">
                 <h3>Виртуальная реальность</h3>
-                <div class="catalog-icon_icons"></div>
+                <div class="catalog-icon-icons"></div>
               </a>
             </li>
             <li class="catalog-icon-categories">
               <a href="monopods.html">
-                <h3>Моноподы для селфи</h3>
+                <h3>Моноподы<br> для селфи</h3>
                 <div class="catalog-icon-icons"></div>
               </a>
             </li>
