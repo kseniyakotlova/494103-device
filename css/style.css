@@ -400,7 +400,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 110px
+  margin-bottom: 97px
 }
 
 .slider {
@@ -415,7 +415,6 @@ input[type="radio"].visually-hidden {
 
 .slide {
   display: none;
-
 }
 
 .slider-text  {
@@ -600,38 +599,147 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-icon-list h3 {
+  margin-top: 0px;
+
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   letter-spacing: 0.01em;
   line-height: normal;
   font-weight: 800;
+  vertical-align: top;
   list-style: none;
 }
 
 .catalog-icon-list {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+
+  position: relative;
+  top:0;
+
   padding: 0;
-  margin-bottom: 86px;
+  margin-top: 0;
   list-style: none;
 }
 
-.catalog-icon-icons {
+.icon1::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+
   width: 160px;
   height: 160px;
+
+  background-image: url('../img/popular-1.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50% ;
+}
+
+.icon2::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+
+  width: 160px;
+  height: 160px;
+
+  background-image: url('../img/popular-2.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 100% ;
+}
+
+.icon3::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+
+  width: 160px;
+  height: 160px;
+
+  background-image: url('../img/popular-3.svg');
+  background-repeat: no-repeat;
+  background-position: 55% 52% ;
+}
+
+.icon4::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+
+  width: 160px;
+  height: 160px;
+
+  background-image: url('../img/popular-4.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 54% ;
+}
+
+.icon5::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+
+  width: 160px;
+  height: 160px;
+
+  background-image: url('../img/popular-5.svg');
+  background-repeat: no-repeat;
+  background-position: 53% 52% ;
+}
+
+.icon6::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+
+  width: 160px;
+  height: 160px;
+
+  background-image: url('../img/popular-6.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 55% ;
+}
+
+.catalog-icon-icons {
+  position: absolute;
+  top: 0px;
+  width: 160px;
+  height: 160px;
+
   background-color: #f0c52e;
   opacity: 0.5;
 }
 
+.catalog-icon-categories {
+  display: flex;
+  margin-right: 40px;
+}
+
 .catalog-icon-categories a {
+  width: 160px;
+  margin-top: 195px;
+  margin-bottom: 0;
   color: #000000;
 }
 
-.catalog-icon-categories {
-  width: 160px;
-  display: flex;
-  align-items: flex-end;
+.catalog-icon-categories a:focus {
+  opacity: 0.3;
 }
+
+
 
 .info {
   padding: 0;
