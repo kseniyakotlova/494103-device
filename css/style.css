@@ -70,6 +70,10 @@ input[type="radio"].visually-hidden {
   height: 299px;
 }
 
+.header-catalog {
+  height: 186px;
+}
+
 .header-logo {
   margin-top: -18px;
   margin-bottom: 22px;
@@ -208,6 +212,7 @@ input[type="radio"].visually-hidden {
 
 .exit {
   margin-right: 16px;
+  opacity: 0.3;
 }
 
 .compare-link {
