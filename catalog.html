@@ -88,13 +88,23 @@
 
       <div class="catalog-container">
         <div class="container">
-        <div class="content-catalog">
         <section class="filtrs">
+          <h3 class="visually-hidden">Фильтр</h3>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <div class="filter-container">
               <fieldset>
                 <legend>Стоимость</legend>
-                от 0 <input type="range" id="price" name="price" min="0" max="9000" step="5000"> до 5000
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="5000"></label>
+                </div>
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
@@ -134,7 +144,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button type="submit" class="filter-button">Показать</button>
+              <button class="button filter-button" type="submit" >Показать</button>
             </div>
           </form>
         </section>
@@ -209,7 +219,6 @@
         </div>
         </div>
       </div>
-    </div>
     </main>
 
     <footer class="main-footer">
@@ -242,18 +251,18 @@
           <div class="third-line">
             <ul class="footer-social">
               <li>
-                <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
-                  <img src="img/fb.svg" width="32" height="32">
+                <a class="social-button" href="#">
+                  <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
                 </a>
               </li>
               <li>
-                <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span>
-                  <img src="img/instagram.svg" width="32" height="32">
+                <a class="social-button" href="#">
+                  <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
                 </a>
               </li>
               <li>
-                <a class="social-button" href="#"><span class="visually-hidden">Твиттер</span>
-                  <img src="img/twitter.svg" width="32" height="32">
+                <a class="social-button" href="#">
+                  <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
                 </a>
               </li>
             </ul>
