@@ -1696,6 +1696,7 @@ a {
 .pagination-list {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 .pagination-item {
@@ -1979,13 +1980,24 @@ a {
   opacity: 0.3;
 }
 
+@popup animation {
+  transition: opacity 2s ease-in-out;
+    opacity: 1;
+  }
+
+.modal-show {
+  display: block;
+
+  animation: animation 2s;
+}
+
 .modal {
   position: fixed;
+
+  display: none;
 }
 
 .modal-write-us {
-  display: none;
-
   top: 50%;
   left: 50%;
   z-index: 5;
@@ -2007,9 +2019,23 @@ a {
   40px 0 40px -40px rgba(2,4,6,.75);
 }
 
-.modal-map {
-  display: none ;
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
+  margin: 0;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
+.modal-map {
   top: 50%;
   left: 50%;
   z-index: 5;
