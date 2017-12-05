@@ -21,7 +21,6 @@ link.addEventListener("click", function (evt) {
     textfield.focus();
 } else {
     nameus.focus();
-    email.focus();
 }
 });
 
