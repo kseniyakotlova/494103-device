@@ -30,9 +30,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -156,7 +154,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   border: 2px solid #000000;
   border-radius: 0;
-  background-color: inherit;
+  background-color: transparent;
 }
 
 .navigation button:hover,
@@ -550,6 +548,8 @@ input[type="radio"].visually-hidden {
 .button {
   position: relative;
   display: inline-block;
+  z-index: 1;
+
   padding: 9px 5px;
 
   font-family: "Gilroy", Tahoma, sans-serif;
@@ -773,9 +773,15 @@ input[type="radio"].visually-hidden {
   background-color: #f0c52e;
 }
 
-.icon:active {
+.icon:active::before,
+.icon:active h3 {
   opacity: 0.3;
 }
+
+.icon:active .catalog-icon-icons {
+  background-color: #f0c52e;
+}
+
 
 .info {
   position: relative;
@@ -1632,7 +1638,6 @@ input[type="radio"].visually-hidden {
 .filter button {
   width: 200px;
   margin-top: -30px;
-  z-index: 1;
   border: none;
   border-radius: 0;
   background-color: transparent;
@@ -1643,8 +1648,6 @@ input[type="radio"].visually-hidden {
 .catalog-cart:hover,
 .filter button:focus,
 .catalog-cart:focus {
-  color: rgba(0, 0, 0);
-  background-color: #f0c52e;
   outline: none;
 }
 
@@ -2168,8 +2171,6 @@ input[type="radio"].visually-hidden {
 
 .write-us-form button:hover,
 .write-us-form button:focus {
- color: rgba(0, 0, 0);
- background-color: #f0c52e;
  outline: none;
 }
 
