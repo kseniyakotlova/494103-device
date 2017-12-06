@@ -266,15 +266,18 @@ a {
 .compare-link:hover,
 .cart-link:hover,
 .login-link:hover,
+.profile-link:hover,
 .compare-link:focus,
 .cart-link:focus,
-.login-link:focus  {
+.login-link:focus
+.profile-link:focus {
   opacity: 0.6;
 }
 
 .compare-link:active,
 .cart-link:active,
-.login-link:active {
+.login-link:active,
+.profile-link:active {
   opacity: 0.3;
 }
 
@@ -424,8 +427,6 @@ a {
 
 .slider {
 
-  display: flex;
-  justify-content: flex-end;
   width: 1160px;
   margin: 0 auto;
 
@@ -437,8 +438,15 @@ a {
   display: none;
 }
 
+.slide-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+}
+
 .slider-text  {
   display: block;
+  order: 2;
   width: 560px;
   padding: 0;
   margin-top: 80px;
@@ -446,24 +454,37 @@ a {
 
 .slider-text p {
   margin-top: 16px;;
-  margin-right: 70px;
+  margin-right: 65px;
   margin-bottom: 43px;
 }
 
+.slide img {
+  order: 1;
+}
+
 .slide-thirst img {
-  margin-left: 85px;
-  margin-right: 125px;
+  margin-left: 89px;
+  margin-right: auto;
 }
 
 .slide-second img {
   margin-left: 116px;
-  margin-right: 132px;
+  margin-top: 12px;
+  margin-right: auto;
+}
+
+.slide-second p {
+  margin-right: 100px;
 }
 
 .slide-third img {
   margin-top: 65px;
-  margin-left: 26px;
-  margin-right: 40px;
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.slide-third p {
+  margin-right: 100px;
 }
 
 .slider-title {
@@ -897,8 +918,8 @@ a {
 
 .warranty-icon {
   position: absolute;
-  top:0;
-  left: 568px;
+  top:-7px;
+  left: 543px;
   width: 171px;
   height: 195px;
   background-image: url('../img/warranty.svg');
@@ -907,8 +928,8 @@ a {
 
 .credit-icon {
   position: absolute;
-  top:0;
-  left: 568px;
+  top:-7px;
+  left: 534px;
   width: 156px;
   height: 188px;
   background-image: url('../img/credit.svg');
