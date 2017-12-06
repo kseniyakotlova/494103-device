@@ -1449,7 +1449,7 @@ a {
 }
 
 .filter-input:disabled + label {
-  color: rgba(166, 166, 166);
+  color: rgba(166, 166, 166, 1);
 }
 
 .filter-input-checkbox + label::before {
@@ -1980,6 +1980,16 @@ a {
   opacity: 0.3;
 }
 
+@keyframes effect {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .modal {
   position: fixed;
 
@@ -1988,6 +1998,7 @@ a {
 
 .modal-show {
   display: block;
+  animation: effect 1s;
 }
 
 .modal-write-us {
