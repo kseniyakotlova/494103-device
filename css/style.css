@@ -49,7 +49,6 @@ a {
 }
 
 .container {
-  position: relative;
 
   width: 1160px;
   margin-left: auto;
@@ -466,26 +465,31 @@ a {
 }
 
 .slider {
+  position: relative;
 
   width: 1160px;
+  max-height: 497px;
   margin: 0 auto;
-
   margin-top: -112px;
   margin-bottom: 98px;
+  padding: 0;
 }
 
 .slide {
   display: none;
+  margin: 0;
+  padding: 0;
 }
+
 
 .slide-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+
   width: 1160px;
+  margin: 0;
+  padding: 0;
 }
 
 .slider-text  {
@@ -558,7 +562,7 @@ a {
 .number {
   position: absolute;
   top: -12px;
-  right: 68px;
+  right: 50px;
 
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 179px;
@@ -569,8 +573,8 @@ a {
 
 .navigation-slider {
   position: absolute;
-  bottom: 154px;
-  right: 80px;
+  bottom: 148px;
+  right: 60px;
 
   display: -webkit-box;
 
@@ -593,31 +597,47 @@ a {
   cursor: pointer;
 }
 
-.table {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.table-slide {
+  border: 0;
+}
+
+.table-slide tbody {
   display: flex;
 }
 
-.table ul {
-  width: 160px;
+.stroke {
+  display: flex;
+  flex-direction: column-reverse;
+
+  margin: 0;
+  padding: 0;
+  margin-right: 78px;
+}
+
+.stroke1 {
+  margin: 0;
   padding: 0;
 
-  list-style: none;
+  font-size: 13px;
+  font-weight: 300;
+  color: inherit;
 }
 
-.table .weight {
-  width: 140px;
-}
+.stroke2 {
+  margin-bottom: 5px;
+  padding: 0;
 
-.table .stroke2 {
-  margin-bottom: 11px;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 36px;
+  line-height: normal;
+  font-weight: 300;
+  color: #000000;
 }
 
 .slider-text .button {
   width: 210px;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 49px;
 }
 
 .button {
@@ -667,21 +687,6 @@ a {
   display: inline-block;
 
   color: rgba(0, 0, 0, 0.3);
-}
-
-.stroke1 {
-  font-size: 13px;
-  line-height: 20px;
-  font-weight: 300;
-  color: inherit;
-}
-
-.stroke2 {
-  font-family: "Gilroy", Tahoma, sans-serif;
-  font-size: 36px;
-  line-height: normal;
-  font-weight: 300;
-  color: #000000;
 }
 
 #product-1:checked ~ .container #slide1,
