@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -22,7 +22,7 @@
           </form>
           <ul class="user-navigation">
             <li class="login">
-              <a class="profile-link" href="profile.html">Валентин Петухов</a>
+              <a class="login-link profile-link" href="profile.html">Валентин Петухов</a>
             </li>
             <li class="exit">
               <a href="#">Выйти</a>
@@ -69,7 +69,6 @@
       <div class="titles-container linear-gradient">
         <div class="container linear-gradient">
           <div class="titles-wrapper">
-          <h3 class="filtrs-title">Фильтр:</h3>
           <section class="sort">
             <h3 class="sort-title">Сортировка:</h3>
             <ul class="sort-list">
@@ -78,8 +77,8 @@
               <li class="on-popularity"><a href="#">По популярности</a></li>
             </ul>
             <ul class="sort-list-min">
-              <li class="max"><a href="#">По возрастанию</a></li>
-              <li class="min"><a href="#">По убыванию</a></li>
+              <li class="max"><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+              <li class="min"><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
             </ul>
           </section>
         </div>
@@ -89,7 +88,7 @@
       <div class="catalog-container linear-gradient-catalog ">
         <div class="container linear-gradient-catalog ">
           <section class="filtrs">
-            <h3 class="visually-hidden">Фильтр</h3>
+            <h3 class="filtrs-title">Фильтр:</h3>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
               <div class="filter-container">
                 <fieldset>
@@ -154,7 +153,7 @@
             <ul class="catalog-list">
               <li class="catalog-item">
                 <a href="catalog-item.html">
-                  <h3 class="device">Любительская селфи-палка</h3>
+                  <h4 class="device">Любительская селфи-палка</h4>
                 </a>
                 <p class="catalog-item-image">
                   <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -167,7 +166,7 @@
               </li>
               <li class="catalog-item">
                 <a href="catalog-item.html">
-                  <h3 class="device">Профессиональная<br>селфи-палка</h3>
+                  <h4 class="device">Профессиональная<br>селфи-палка</h4>
                 </a>
                 <p class="catalog-item-image">
                   <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -180,7 +179,7 @@
               </li>
               <li class="catalog-item">
                 <a href="catalog-item.html">
-                  <h3 class="device">Непотопляемая селфи-палка</h3>
+                  <h4 class="device">Непотопляемая селфи-палка</h4>
                 </a>
                 <p class="catalog-item-image">
                   <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
@@ -193,7 +192,7 @@
               </li>
               <li class="catalog-item new">
                 <a href="catalog-item.html">
-                  <h3 class="device">Селфи-палка «Следуй за мной»</h3>
+                  <h4 class="device">Селфи-палка «Следуй за мной»</h4>
                 </a>
                 <p class="catalog-item-image">
                   <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
@@ -265,7 +264,7 @@
                 </a>
               </li>
             </ul>
-            <a class="html-academy" href="https://htmlacademy.ru">
+            <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
             </a>
           </div>

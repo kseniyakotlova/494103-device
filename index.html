@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -81,7 +81,7 @@
                     <td class="stroke2">5 кг</td>
                   </tr>
                   <tr class="stroke">
-                    <td>Материал</td>
+                    <td class="stroke1">Материал</td>
                     <td class="stroke2">Карбон</td>
                   </tr>
                 </table>
@@ -131,9 +131,9 @@
           </div>
 
           <div class="navigation-slider">
-            <label for="product-1">Слайд1</label>
-            <label for="product-2">Слайд2</label>
-            <label for="product-3">Слайд3</label>
+            <label for="product-1"><span class="visually-hidden">Слайд1</span></label>
+            <label for="product-2"><span class="visually-hidden">Слайд2</span></label>
+            <label for="product-3"><span class="visually-hidden">Слайд3</span></label>
           </div>
         </section>
       </div>
@@ -293,7 +293,7 @@
                 </a>
               </li>
             </ul>
-            <a class="html-academy" href="https://htmlacademy.ru">
+            <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
             </a>
           </div>
@@ -317,7 +317,7 @@
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
     <section class="modal modal-map">
@@ -327,10 +327,10 @@
       <p>
         <img src="img/map-big.jpg" width="960" height="559" alt="г. Москва, улица Строителей,15">
       </p>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
-    <script src="js/popup.js"></script>
-    <script src="js/popup-map.js"></script>
+    <script src="js/popup.min.js"></script>
+    <script src="js/popup-map.min.js"></script>
   </body>
 </html>
