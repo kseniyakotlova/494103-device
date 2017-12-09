@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'Gilroy Extrabold';
-    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
+    font-family: "Gilroy Extrabold";
+    src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2");
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy Light';
-    src: url('../fonts/gilroylight-webfont.woff2') format('woff2');
+    font-family: "Gilroy Light";
+    src: url("../fonts/gilroylight-webfont.woff2") format("woff2");
     font-weight: 300;
     font-style: normal;
 }
@@ -148,7 +148,7 @@ a {
   width: 16px;
   height: 16px;
 
-  background-image: url('../img/search.svg');
+  background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -230,7 +230,7 @@ a {
   width: 13px;
   height: 12px;
 
-  background-image: url('../img/user.svg');
+  background-image: url("../img/user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -263,7 +263,7 @@ a {
   width: 10px;
   height: 10px;
 
-  background-image: url('../img/compare.svg');
+  background-image: url("../img/compare.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -287,7 +287,7 @@ a {
   width: 12px;
   height: 12px;
 
-  background-image: url('../img/cart.svg');
+  background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -361,7 +361,7 @@ a {
   height: 16px;
   margin-left: 9px;
 
-  background-image: url('../img/plus.svg');
+  background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -603,7 +603,7 @@ a {
   margin-right: 22px;
 
   vertical-align: top;
-  background-image: url('../img/radio-off.svg');
+  background-image: url("../img/radio-off.svg");
   cursor: pointer;
 }
 
@@ -638,6 +638,7 @@ a {
 }
 
 .stroke1 {
+  display: block;
   margin: 0;
   padding: 0;
 
@@ -647,6 +648,7 @@ a {
 }
 
 .stroke2 {
+  display: block;
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
@@ -728,7 +730,7 @@ a {
 #product-1:checked ~ .container label[for="product-1"],
 #product-2:checked ~ .container label[for="product-2"],
 #product-3:checked ~ .container label[for="product-3"] {
-  background-image: url('../img/radio-on.svg');
+  background-image: url("../img/radio-on.svg");
 }
 
 .main-index input {
@@ -764,7 +766,7 @@ a {
   width: 160px;
   height: 160px;
 
-  background-image: url('../img/popular-1.svg');
+  background-image: url("../img/popular-1.svg");
   background-repeat: no-repeat;
   background-position: 50% 50% ;
 }
@@ -779,7 +781,7 @@ a {
   width: 160px;
   height: 160px;
 
-  background-image: url('../img/popular-2.svg');
+  background-image: url("../img/popular-2.svg");
   background-repeat: no-repeat;
   background-position: 50% 100% ;
 }
@@ -794,7 +796,7 @@ a {
   width: 160px;
   height: 160px;
 
-  background-image: url('../img/popular-3.svg');
+  background-image: url("../img/popular-3.svg");
   background-repeat: no-repeat;
   background-position: 55% 52% ;
 }
@@ -809,7 +811,7 @@ a {
   width: 160px;
   height: 160px;
 
-  background-image: url('../img/popular-4.svg');
+  background-image: url("../img/popular-4.svg");
   background-repeat: no-repeat;
   background-position: 50% 54% ;
 }
@@ -824,7 +826,7 @@ a {
   width: 160px;
   height: 160px;
 
-  background-image: url('../img/popular-5.svg');
+  background-image: url("../img/popular-5.svg");
   background-repeat: no-repeat;
   background-position: 53% 52% ;
 }
@@ -839,7 +841,7 @@ a {
   width: 160px;
   height: 160px;
 
-  background-image: url('../img/popular-6.svg');
+  background-image: url("../img/popular-6.svg");
   background-repeat: no-repeat;
   background-position: 50% 55% ;
 }
@@ -1024,7 +1026,7 @@ a {
   left: 558px;
   width: 136px;
   height: 164px;
-  background-image: url('../img/delivery.svg');
+  background-image: url("../img/delivery.svg");
   background-repeat: no-repeat;
 }
 
@@ -1034,7 +1036,7 @@ a {
   left: 543px;
   width: 171px;
   height: 195px;
-  background-image: url('../img/warranty.svg');
+  background-image: url("../img/warranty.svg");
   background-repeat: no-repeat;
 }
 
@@ -1044,7 +1046,7 @@ a {
   left: 534px;
   width: 156px;
   height: 188px;
-  background-image: url('../img/credit.svg');
+  background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
 }
 
@@ -1075,7 +1077,7 @@ a {
   width: 260px;
   height: 100px;
 
-  background-image: url('../img/logo-1_hover.png');
+  background-image: url("../img/logo-1_hover.png");
   background-repeat: no-repeat;
 }
 
@@ -1089,7 +1091,7 @@ a {
   width: 260px;
   height: 100px;
 
-  background-image: url('../img/logo-2_hover.png');
+  background-image: url("../img/logo-2_hover.png");
   background-repeat: no-repeat;
 }
 
@@ -1103,7 +1105,7 @@ a {
   width: 260px;
   height: 100px;
 
-  background-image: url('../img/logo-3_hover.png');
+  background-image: url("../img/logo-3_hover.png");
   background-repeat: no-repeat;
 }
 
@@ -1117,7 +1119,7 @@ a {
   width: 260px;
   height: 100px;
 
-  background-image: url('../img/logo-4_hover.png');
+  background-image: url("../img/logo-4_hover.png");
   background-repeat: no-repeat;
 }
 
@@ -1214,7 +1216,7 @@ a {
   width: 18px;
   height: 18px;
 
-  background-image: url('../img/bulit.svg');
+  background-image: url("../img/bulit.svg");
   background-repeat: no-repeat;
 }
 
@@ -1279,7 +1281,7 @@ a {
 
   width: 4px;
   height: 7px;
-  background-image: url('../img/nav-arrow.svg');
+  background-image: url("../img/nav-arrow.svg");
   background-repeat: no-repeat;
   background-color: transparent;
 }
@@ -1445,7 +1447,7 @@ a {
 
   width: 11px;
   height: 10px;
-  background-image: url('../img/icon-up-dir.svg');
+  background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
 }
@@ -1459,7 +1461,7 @@ a {
 
   width: 11px;
   height: 10px;
-  background-image: url('../img/icon-down-dir.svg');
+  background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
 }
 
@@ -1578,7 +1580,7 @@ a {
   width: 20px;
   height: 23px;
 
-  background-image: url('../img/filter-button.svg');
+  background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -1645,7 +1647,7 @@ a {
 
   width: 23px;
   height: 23px;
-  background-image: url('../img/checkbox-off.svg');
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 
@@ -1657,7 +1659,7 @@ a {
 
   width: 27px;
   height: 23px;
-  background-image: url('../img/checkbox-on.svg');
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
@@ -1669,7 +1671,7 @@ a {
 
   width: 25px;
   height: 25px;
-  background-image: url('../img/radio-off.svg');
+  background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
 }
 
@@ -1681,7 +1683,7 @@ a {
 
   width: 25px;
   height: 25px;
-  background-image: url('../img/radio-on.svg');
+  background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
 }
 
@@ -1823,7 +1825,7 @@ a {
   width: 60px;
   height: 61px;
 
-  background-image: url('../img/NEW.png');
+  background-image: url("../img/NEW.png");
   background-repeat: no-repeat;
 }
 
@@ -2034,7 +2036,7 @@ a {
   width: 13px;
   height: 12px;
 
-  background-image: url('../img/user_footer.svg');
+  background-image: url("../img/user_footer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2054,7 +2056,7 @@ a {
   width: 10px;
   height: 10px;
 
-  background-image: url('../img/compare_footer.svg');
+  background-image: url("../img/compare_footer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2074,7 +2076,7 @@ a {
   width: 12px;
   height: 12px;
 
-  background-image: url('../img/cart_footer.svg');
+  background-image: url("../img/cart_footer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2322,7 +2324,7 @@ a {
   width: 55px;
   height: 55px;
 
-  background-image: url('../img/modal-close.svg');
+  background-image: url("../img/modal-close.svg");
   background-color: transparent;
   border: 0px;
   border-radius: 0px;
