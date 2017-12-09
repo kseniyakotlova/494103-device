@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -17,7 +17,7 @@
         <div class="navigation">
           <form class="search-navigation" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+            <input class="search-navigation-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
             <button class="search">Найти</button>
           </form>
           <ul class="user-navigation">
@@ -150,7 +150,7 @@
             </li>
             <li class="catalog-icon-categories">
               <a class="icon icon2" href="monopods.html">
-                <h3>Моноподы<br>для селфи</h3>
+                <h3>Моноподы для селфи</h3>
                 <div class="catalog-icon-icons"></div>
               </a>
             </li>
@@ -206,7 +206,7 @@
 
             <div id="credit" class="info-about-us">
               <h2 class="info-about">Кредит</h2>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для нашего банка, разумеется.</p>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
               <div class="credit-icon"></div>
             </div>
           </div>
@@ -249,55 +249,55 @@
     </main>
 
     <footer class="main-footer">
-        <div class="container">
-          <div class="first-line">
-            <a class="footer-logo">
-              <img src="img/logo_footer.svg" width="160" height="35" alt="Логотип магазина гаджетов «Девайс»">
-            </a>
-            <ul class="footer-user-navigation">
-              <li class="login">
-                <a class="login-link-footer" href="login.html">Войти</a>
-              </li>
-              <li class="compare">
-                <a class="compare-link-footer" href="compare.html">Сравнить</a>
-              </li>
-              <li class="cart">
-                <a class="cart-link-footer" href="cart.html">Корзина</a>
-              </li>
-            </ul>
-          </div>
-          <div class="second-line">
-            <p class="footer-contact">г. Москва, ул. Строителей, 15</p>
-            <ul class="footer-site-navigation">
-              <li><a href="delivery.html">Доставка</a></li>
-              <li><a href="guarantee.html">Гарантия</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-            <p class="footer-contact-phone">Тел.: +7 (495) 495-95-95</p>
-          </div>
-          <div class="third-line">
-            <ul class="footer-social">
-              <li>
-                <a class="social-button" href="#">
-                  <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
-                </a>
-              </li>
-              <li>
-                <a class="social-button" href="#">
-                  <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
-                </a>
-              </li>
-              <li>
-                <a class="social-button" href="#">
-                  <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
-                </a>
-              </li>
-            </ul>
-            <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
-            </a>
-          </div>
+      <div class="container">
+        <div class="first-line">
+          <a class="footer-logo">
+            <img src="img/logo_footer.svg" width="160" height="35" alt="Логотип магазина гаджетов «Девайс»">
+          </a>
+          <ul class="footer-user-navigation">
+            <li class="login">
+              <a class="login-link-footer" href="login.html">Войти</a>
+            </li>
+            <li class="compare">
+              <a class="compare-link-footer" href="compare.html">Сравнить</a>
+            </li>
+            <li class="cart">
+              <a class="cart-link-footer" href="cart.html">Корзина</a>
+            </li>
+          </ul>
         </div>
+        <div class="second-line">
+          <p class="footer-contact">г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-site-navigation">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <p class="footer-contact-phone">Тел.: +7 (495) 495-95-95</p>
+        </div>
+        <div class="third-line">
+          <ul class="footer-social">
+            <li>
+              <a class="social-button" href="#">
+                <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
+              </a>
+            </li>
+          </ul>
+          <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
+          </a>
+        </div>
+      </div>
     </footer>
 
     <section class="modal modal-write-us">
@@ -309,7 +309,7 @@
         </p>
         <p class="write-us-item e-mail-input">
           <label for="write-us-e-mail">Ваш e-mail</label>
-          <input id="write-us-e-mail" type="text" name="email" placeholder="Для отправки ответа">
+          <input id="write-us-e-mail" type="email" name="emailus" placeholder="Для отправки ответа">
         </p>
         <p class="write-us-item comment-input">
           <label for="write-us-comment">Текст письма:</label>
