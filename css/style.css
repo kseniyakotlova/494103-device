@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "Gilroy Extrabold";
+    font-family: "Gilroy";
     src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2");
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Gilroy Light";
+    font-family: "Gilroy";
     src: url("../fonts/gilroylight-webfont.woff2") format("woff2");
     font-weight: 300;
     font-style: normal;
@@ -85,7 +85,6 @@ a {
   width: 164px;
   height: 36px;
 }
-
 
 .main-header a[href]:hover,
 .main-header a[href]:focus {
@@ -313,7 +312,7 @@ a {
 .main-navigation {
   margin-bottom: 38px;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   letter-spacing: 0.2em;
   line-height: normal;
@@ -373,11 +372,7 @@ a {
   left: -60px;
   z-index: 3;
 
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -405,10 +400,6 @@ a {
   font-weight: 300;
 }
 
-.main-navigation > ul > li .drop-menu {
-  display: none;
-}
-
 .smart-watch {
   margin-bottom: 40px;
 }
@@ -425,7 +416,7 @@ a {
   text-transform: none;
 }
 
-.main-navigation > ul > li:hover .drop-menu {
+.catalog:hover .drop-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,7 +452,7 @@ a {
 }
 
 .slide b {
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   line-height: normal;
   font-weight: 800;
@@ -575,7 +566,7 @@ a {
   top: -12px;
   right: 50px;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 179px;
   line-height: 179px;
   font-weight: 800;
@@ -653,7 +644,7 @@ a {
   margin-bottom: 5px;
   padding: 0;
 
-  font-family: "Gilroy Light", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 36px;
   line-height: normal;
   font-weight: 300;
@@ -673,7 +664,7 @@ a {
 
   padding: 9px 5px;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   line-height: normal;
   letter-spacing: 0.2em;
@@ -853,7 +844,7 @@ a {
 
   margin-top: 0;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   letter-spacing: 0.01em;
   line-height: normal;
@@ -938,7 +929,7 @@ a {
   margin-top: -19px;
 
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   letter-spacing: 0.2em;
   line-height: normal;
@@ -1006,7 +997,7 @@ a {
   margin: 0;
   margin-bottom: 26px;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   letter-spacing: 0.01em;
   line-height: normal;
@@ -1132,8 +1123,8 @@ a {
 
 .about-us-title {
   position: relative;
-  margin-top: 44px;
-  margin-bottom: 38px;
+  margin-top: 47px;
+  margin-bottom: 40px;
 
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
@@ -1147,7 +1138,7 @@ a {
   content: "";
 
   position: absolute;
-  top: -46px;
+  top: -50px;
   left: 0;
 
   width: 80px;
@@ -1193,7 +1184,7 @@ a {
 .list {
   padding-left: 35px;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 40px;
@@ -1237,7 +1228,7 @@ a {
   margin-top: 0px;
   padding: 0;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   line-height: normal;
   letter-spacing: 0.01em;
@@ -1347,7 +1338,7 @@ a {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 16px;
   letter-spacing: 0.2em;
   line-height: normal;
@@ -1526,7 +1517,7 @@ a {
 
   margin-bottom: 20px;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   letter-spacing: 0.01em;
   line-height: normal;
@@ -1776,7 +1767,7 @@ a {
 .device {
   margin: 0;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   letter-spacing: 0.01em;
   line-height: normal;
@@ -1793,7 +1784,7 @@ a {
 
 .price {
   width: 100px;
-  font-family: "Gilroy Light", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 16px;
   letter-spacing: 0.01em;
   line-height: normal;
@@ -1838,7 +1829,7 @@ a {
   width: 60px;
   height: 61px;
 
-  background-image: url("../img/NEW.png");
+  background-image: url("../img/new.png");
   background-repeat: no-repeat;
 }
 
@@ -1943,7 +1934,7 @@ a {
 }
 
 .pagination-item a {
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 16px;
   letter-spacing: 0.2em;
   line-height: normal;
@@ -1968,7 +1959,7 @@ a {
   width: 137px;
   height: 70px;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 16px;
   letter-spacing: 0.2em;
   line-height: normal;
@@ -2125,7 +2116,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-bottom: 61px;
   padding: 0;
 }
@@ -2156,7 +2149,7 @@ a {
   padding: 0;
   margin: 0;
 
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   letter-spacing: 0.2em;
   line-height: normal;
@@ -2376,7 +2369,7 @@ a {
 }
 
 .write-us-item label {
-  font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   letter-spacing: 0;
   font-weight: 800;
@@ -2464,7 +2457,7 @@ a {
 .write-us-form button {
   min-width: 200px;
 
- font-family: "Gilroy Extrabold", Tahoma, sans-serif;
+ font-family: "Gilroy", Tahoma, sans-serif;
  font-size: 18px;
  letter-spacing: 0.2em;
  font-weight: 800;
